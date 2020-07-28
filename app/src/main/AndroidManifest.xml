@@ -20,7 +20,6 @@
         </activity>
         <activity android:name=".ContactsActivity" />
         <activity android:name=".ConversationsActivity" />
-        <activity android:name=".ChatMessageActivity" />
         <activity android:name=".RegistrationActivity" />
     </application>
 
