@@ -1,10 +1,18 @@
 package com.nqaze.easychat_kotlin
 
+import android.app.Activity
 import android.app.Application
-import android.util.Log
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Toast
 import com.cometchat.pro.core.AppSettings
+import com.cometchat.pro.core.Call
 import com.cometchat.pro.core.CometChat
 import com.cometchat.pro.exceptions.CometChatException
+import com.cometchat.pro.models.User
+import constant.StringContract
+import screen.CometChatCallActivity
+
 
 class ChatApp : Application() {
 

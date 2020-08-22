@@ -47,7 +47,7 @@ class RegistrationActivity : AppCompatActivity() {
         CometChat.login(user.uid, AppConfig.AppDetails.API_KEY, object : CometChat.CallbackListener<User?>() {
                 override fun onSuccess(user: User?) {
                     progressBar.visibility = View.GONE
-                    startActivity(Intent(this@RegistrationActivity, ConversationsActivity::class.java))
+                    startActivity(Intent(this@RegistrationActivity, CallHistoryActivity::class.java))
                 }
                 override fun onError(e: CometChatException) {
                     progressBar.visibility = View.GONE

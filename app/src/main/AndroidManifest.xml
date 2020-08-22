@@ -21,6 +21,8 @@
         <activity android:name=".ContactsActivity" />
         <activity android:name=".ConversationsActivity" />
         <activity android:name=".RegistrationActivity" />
+        <activity android:name=".CallHistoryActivity" />
+        <activity android:name=".BaseActivity" />
     </application>
 
 </manifest>

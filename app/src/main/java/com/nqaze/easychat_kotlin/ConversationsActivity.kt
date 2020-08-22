@@ -31,7 +31,7 @@ class ConversationsActivity : AppCompatActivity() {
         })
     }
 
-    fun newChatTapped(view: View?) {
+    fun newChatTapped(view: View) {
         startActivity(Intent(this@ConversationsActivity, ContactsActivity::class.java))
     }
 }
