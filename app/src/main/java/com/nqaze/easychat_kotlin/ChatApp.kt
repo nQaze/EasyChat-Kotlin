@@ -11,10 +11,13 @@ import com.cometchat.pro.core.CometChat
 import com.cometchat.pro.exceptions.CometChatException
 import com.cometchat.pro.models.User
 import constant.StringContract
+import listeners.CometChatCallListener
 import screen.CometChatCallActivity
 
 
 class ChatApp : Application() {
+
+    private val listenerID: String = "999"
 
     override fun onCreate() {
         super.onCreate()
@@ -27,5 +30,12 @@ class ChatApp : Application() {
             override fun onError(e: CometChatException) {
             }
         })
+
+        CometChatCallListener.addCallListener(listenerID,this);
+    }
+
+    override fun onTerminate() {
+        CometChatCallListener.removeCallListener(listenerID)
+        super.onTerminate()
     }
 }
